@@ -15,9 +15,6 @@
 		430708C01C82B5CD0099AD80 /* SpectralMuseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430708BF1C82B5CD0099AD80 /* SpectralMuseUITests.swift */; };
 		430708CF1C82B6F70099AD80 /* libMuse.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 430708CE1C82B6F70099AD80 /* libMuse.a */; };
 		430708D11C82BD320099AD80 /* Renderers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430708D01C82BD320099AD80 /* Renderers.swift */; };
-		430708D41C82C64B0099AD80 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 430708D21C82C64B0099AD80 /* Metal.framework */; };
-		430708D51C82C64B0099AD80 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 430708D31C82C64B0099AD80 /* MetalKit.framework */; };
-		430708D71C82C6500099AD80 /* ModelIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 430708D61C82C6500099AD80 /* ModelIO.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,9 +52,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				430708D71C82C6500099AD80 /* ModelIO.framework in Frameworks */,
-				430708D41C82C64B0099AD80 /* Metal.framework in Frameworks */,
-				430708D51C82C64B0099AD80 /* MetalKit.framework in Frameworks */,
 				430708CF1C82B6F70099AD80 /* libMuse.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,7 +216,6 @@
 			files = (
 				430708AD1C82B5CD0099AD80 /* Controllers.swift in Sources */,
 				430708AB1C82B5CD0099AD80 /* AppDelegate.swift in Sources */,
-				430708E31C82D5BA0099AD80 /* README.md in Sources */,
 				430708D11C82BD320099AD80 /* Renderers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +297,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-lc++";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -342,6 +336,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-lc++";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -425,6 +420,7 @@
 				430708C61C82B5CD0099AD80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		430708C71C82B5CD0099AD80 /* Build configuration list for PBXNativeTarget "SpectralMuseUITests" */ = {
 			isa = XCConfigurationList;
@@ -433,6 +429,7 @@
 				430708C91C82B5CD0099AD80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
