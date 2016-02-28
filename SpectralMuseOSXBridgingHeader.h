@@ -10,5 +10,6 @@
 #define SpectralMuseOSXBridgingHeader_h
 
 #import "Headers/Muse/Muse.h"
+#import "LibMuse.h"
 
 #endif /* SpectralMuseOSXBridgingHeader_h */

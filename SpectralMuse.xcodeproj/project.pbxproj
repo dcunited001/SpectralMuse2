@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		430708AB1C82B5CD0099AD80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430708AA1C82B5CD0099AD80 /* AppDelegate.swift */; };
 		430708AD1C82B5CD0099AD80 /* Controllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430708AC1C82B5CD0099AD80 /* Controllers.swift */; };
 		430708B01C82B5CD0099AD80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 430708AE1C82B5CD0099AD80 /* Main.storyboard */; };
 		430708B21C82B5CD0099AD80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 430708B11C82B5CD0099AD80 /* Assets.xcassets */; };
@@ -20,6 +19,8 @@
 		430708ED1C82DD910099AD80 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 430708D31C82C64B0099AD80 /* MetalKit.framework */; };
 		430708EE1C82DD980099AD80 /* ModelIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 430708D61C82C6500099AD80 /* ModelIO.framework */; };
 		430708F01C82DDB60099AD80 /* Synchronized.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 430708EF1C82DDB60099AD80 /* Synchronized.framework */; };
+		430708F31C82E8FC0099AD80 /* Headers in Resources */ = {isa = PBXBuildFile; fileRef = 430708F21C82E8FC0099AD80 /* Headers */; };
+		430708F91C82F4C10099AD80 /* LibMuse.m in Sources */ = {isa = PBXBuildFile; fileRef = 430708F81C82F4C10099AD80 /* LibMuse.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,9 @@
 		430708D61C82C6500099AD80 /* ModelIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ModelIO.framework; path = System/Library/Frameworks/ModelIO.framework; sourceTree = SDKROOT; };
 		430708E81C82DD5E0099AD80 /* Carthage */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Carthage; sourceTree = "<group>"; };
 		430708EF1C82DDB60099AD80 /* Synchronized.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Synchronized.framework; path = Carthage/Build/iOS/Synchronized.framework; sourceTree = "<group>"; };
+		430708F21C82E8FC0099AD80 /* Headers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Headers; sourceTree = "<group>"; };
+		430708F71C82F4C10099AD80 /* LibMuse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibMuse.h; sourceTree = "<group>"; };
+		430708F81C82F4C10099AD80 /* LibMuse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibMuse.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,7 @@
 				430708A91C82B5CD0099AD80 /* SpectralMuse */,
 				430708BE1C82B5CD0099AD80 /* SpectralMuseUITests */,
 				430708A81C82B5CD0099AD80 /* Products */,
+				430708F21C82E8FC0099AD80 /* Headers */,
 				430708E81C82DD5E0099AD80 /* Carthage */,
 			);
 			sourceTree = "<group>";
@@ -113,6 +118,8 @@
 				430708B11C82B5CD0099AD80 /* Assets.xcassets */,
 				430708B31C82B5CD0099AD80 /* LaunchScreen.storyboard */,
 				430708B61C82B5CD0099AD80 /* Info.plist */,
+				430708F71C82F4C10099AD80 /* LibMuse.h */,
+				430708F81C82F4C10099AD80 /* LibMuse.m */,
 			);
 			path = SpectralMuse;
 			sourceTree = "<group>";
@@ -209,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				430708B51C82B5CD0099AD80 /* LaunchScreen.storyboard in Resources */,
+				430708F31C82E8FC0099AD80 /* Headers in Resources */,
 				430708B21C82B5CD0099AD80 /* Assets.xcassets in Resources */,
 				430708B01C82B5CD0099AD80 /* Main.storyboard in Resources */,
 				430708E91C82DD5E0099AD80 /* Carthage in Resources */,
@@ -248,7 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				430708AD1C82B5CD0099AD80 /* Controllers.swift in Sources */,
-				430708AB1C82B5CD0099AD80 /* AppDelegate.swift in Sources */,
+				430708F91C82F4C10099AD80 /* LibMuse.m in Sources */,
 				430708D11C82BD320099AD80 /* Renderers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
