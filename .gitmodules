@@ -1,0 +1,3 @@
+[submodule "Carthage/Checkouts/Synchronized"]
+	path = Carthage/Checkouts/Synchronized
+	url = https://github.com/ide/Synchronized.git
