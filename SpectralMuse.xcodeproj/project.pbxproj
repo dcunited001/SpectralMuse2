@@ -15,6 +15,11 @@
 		430708C01C82B5CD0099AD80 /* SpectralMuseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430708BF1C82B5CD0099AD80 /* SpectralMuseUITests.swift */; };
 		430708CF1C82B6F70099AD80 /* libMuse.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 430708CE1C82B6F70099AD80 /* libMuse.a */; };
 		430708D11C82BD320099AD80 /* Renderers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430708D01C82BD320099AD80 /* Renderers.swift */; };
+		430708E91C82DD5E0099AD80 /* Carthage in Resources */ = {isa = PBXBuildFile; fileRef = 430708E81C82DD5E0099AD80 /* Carthage */; };
+		430708EC1C82DD910099AD80 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 430708D21C82C64B0099AD80 /* Metal.framework */; };
+		430708ED1C82DD910099AD80 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 430708D31C82C64B0099AD80 /* MetalKit.framework */; };
+		430708EE1C82DD980099AD80 /* ModelIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 430708D61C82C6500099AD80 /* ModelIO.framework */; };
+		430708F01C82DDB60099AD80 /* Synchronized.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 430708EF1C82DDB60099AD80 /* Synchronized.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,8 @@
 		430708D21C82C64B0099AD80 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 		430708D31C82C64B0099AD80 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
 		430708D61C82C6500099AD80 /* ModelIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ModelIO.framework; path = System/Library/Frameworks/ModelIO.framework; sourceTree = SDKROOT; };
+		430708E81C82DD5E0099AD80 /* Carthage */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Carthage; sourceTree = "<group>"; };
+		430708EF1C82DDB60099AD80 /* Synchronized.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Synchronized.framework; path = Carthage/Build/iOS/Synchronized.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +59,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				430708EE1C82DD980099AD80 /* ModelIO.framework in Frameworks */,
+				430708EC1C82DD910099AD80 /* Metal.framework in Frameworks */,
+				430708ED1C82DD910099AD80 /* MetalKit.framework in Frameworks */,
+				430708F01C82DDB60099AD80 /* Synchronized.framework in Frameworks */,
 				430708CF1C82B6F70099AD80 /* libMuse.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,6 +80,7 @@
 		4307089E1C82B5CD0099AD80 = {
 			isa = PBXGroup;
 			children = (
+				430708EF1C82DDB60099AD80 /* Synchronized.framework */,
 				430708D61C82C6500099AD80 /* ModelIO.framework */,
 				430708D21C82C64B0099AD80 /* Metal.framework */,
 				430708D31C82C64B0099AD80 /* MetalKit.framework */,
@@ -78,6 +90,7 @@
 				430708A91C82B5CD0099AD80 /* SpectralMuse */,
 				430708BE1C82B5CD0099AD80 /* SpectralMuseUITests */,
 				430708A81C82B5CD0099AD80 /* Products */,
+				430708E81C82DD5E0099AD80 /* Carthage */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +136,7 @@
 				430708A31C82B5CD0099AD80 /* Sources */,
 				430708A41C82B5CD0099AD80 /* Frameworks */,
 				430708A51C82B5CD0099AD80 /* Resources */,
+				430708F11C82DDC70099AD80 /* Copy Carthage Frameworks */,
 			);
 			buildRules = (
 			);
@@ -197,6 +211,7 @@
 				430708B51C82B5CD0099AD80 /* LaunchScreen.storyboard in Resources */,
 				430708B21C82B5CD0099AD80 /* Assets.xcassets in Resources */,
 				430708B01C82B5CD0099AD80 /* Main.storyboard in Resources */,
+				430708E91C82DD5E0099AD80 /* Carthage in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +223,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		430708F11C82DDC70099AD80 /* Copy Carthage Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Synchronized.framework",
+			);
+			name = "Copy Carthage Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		430708A31C82B5CD0099AD80 /* Sources */ = {
@@ -348,6 +381,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SpectralMuse/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -365,6 +402,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SpectralMuse/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
