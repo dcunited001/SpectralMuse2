@@ -12,9 +12,13 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
+    var muz0r: IXNMuseManager?
+//    var muzeTimer: NSTimer!
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        let foo = IXNMuseDataPacketType.Accelerometer
+        
         // Override point for customization after application launch.
         return true
     }
@@ -35,6 +39,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        
+        //TODO: move to a synchronize block (tried adding this with Carthage, but it fucked my project)
+        if (self.muz0r != nil) { return; }
+        
+        self.muz0r = IXNMuseManager.sharedManager()
     }
 
     func applicationWillTerminate(application: UIApplication) {
