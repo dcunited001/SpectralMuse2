@@ -8,20 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		430708AB1C82B5CD0099AD80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430708AA1C82B5CD0099AD80 /* AppDelegate.swift */; };
-		430708AD1C82B5CD0099AD80 /* Controllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430708AC1C82B5CD0099AD80 /* Controllers.swift */; };
+		430708AD1C82B5CD0099AD80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430708AC1C82B5CD0099AD80 /* ViewController.swift */; };
 		430708B01C82B5CD0099AD80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 430708AE1C82B5CD0099AD80 /* Main.storyboard */; };
 		430708B21C82B5CD0099AD80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 430708B11C82B5CD0099AD80 /* Assets.xcassets */; };
 		430708B51C82B5CD0099AD80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 430708B31C82B5CD0099AD80 /* LaunchScreen.storyboard */; };
 		430708C01C82B5CD0099AD80 /* SpectralMuseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430708BF1C82B5CD0099AD80 /* SpectralMuseUITests.swift */; };
 		430708CF1C82B6F70099AD80 /* libMuse.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 430708CE1C82B6F70099AD80 /* libMuse.a */; };
-		430708D11C82BD320099AD80 /* Renderers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430708D01C82BD320099AD80 /* Renderers.swift */; };
-		430708D41C82C64B0099AD80 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 430708D21C82C64B0099AD80 /* Metal.framework */; };
-		430708D51C82C64B0099AD80 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 430708D31C82C64B0099AD80 /* MetalKit.framework */; };
-		430708D71C82C6500099AD80 /* ModelIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 430708D61C82C6500099AD80 /* ModelIO.framework */; };
-		430708D91C82CEDE0099AD80 /* Carthage in Resources */ = {isa = PBXBuildFile; fileRef = 430708D81C82CEDE0099AD80 /* Carthage */; };
-		430708E11C82D5BA0099AD80 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 430708DE1C82D5BA0099AD80 /* Cartfile */; };
-		430708E21C82D5BA0099AD80 /* Cartfile.resolved in Resources */ = {isa = PBXBuildFile; fileRef = 430708DF1C82D5BA0099AD80 /* Cartfile.resolved */; };
-		430708E31C82D5BA0099AD80 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 430708E01C82D5BA0099AD80 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +29,7 @@
 /* Begin PBXFileReference section */
 		430708A71C82B5CD0099AD80 /* SpectralMuse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpectralMuse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		430708AA1C82B5CD0099AD80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		430708AC1C82B5CD0099AD80 /* Controllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controllers.swift; sourceTree = "<group>"; };
+		430708AC1C82B5CD0099AD80 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		430708AF1C82B5CD0099AD80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		430708B11C82B5CD0099AD80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		430708B41C82B5CD0099AD80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,14 +40,6 @@
 		430708CA1C82B6130099AD80 /* SpectralMuseOSXBridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectralMuseOSXBridgingHeader.h; sourceTree = "<group>"; };
 		430708CD1C82B6B30099AD80 /* Muse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Muse.h; path = Headers/Muse/Muse.h; sourceTree = "<group>"; };
 		430708CE1C82B6F70099AD80 /* libMuse.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMuse.a; sourceTree = "<group>"; };
-		430708D01C82BD320099AD80 /* Renderers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Renderers.swift; sourceTree = "<group>"; };
-		430708D21C82C64B0099AD80 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
-		430708D31C82C64B0099AD80 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
-		430708D61C82C6500099AD80 /* ModelIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ModelIO.framework; path = System/Library/Frameworks/ModelIO.framework; sourceTree = SDKROOT; };
-		430708D81C82CEDE0099AD80 /* Carthage */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Carthage; sourceTree = "<group>"; };
-		430708DE1C82D5BA0099AD80 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
-		430708DF1C82D5BA0099AD80 /* Cartfile.resolved */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = "<group>"; };
-		430708E01C82D5BA0099AD80 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,9 +47,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				430708D71C82C6500099AD80 /* ModelIO.framework in Frameworks */,
-				430708D41C82C64B0099AD80 /* Metal.framework in Frameworks */,
-				430708D51C82C64B0099AD80 /* MetalKit.framework in Frameworks */,
 				430708CF1C82B6F70099AD80 /* libMuse.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -83,19 +64,12 @@
 		4307089E1C82B5CD0099AD80 = {
 			isa = PBXGroup;
 			children = (
-				430708D61C82C6500099AD80 /* ModelIO.framework */,
-				430708D21C82C64B0099AD80 /* Metal.framework */,
-				430708D31C82C64B0099AD80 /* MetalKit.framework */,
 				430708CE1C82B6F70099AD80 /* libMuse.a */,
 				430708CD1C82B6B30099AD80 /* Muse.h */,
 				430708CA1C82B6130099AD80 /* SpectralMuseOSXBridgingHeader.h */,
 				430708A91C82B5CD0099AD80 /* SpectralMuse */,
 				430708BE1C82B5CD0099AD80 /* SpectralMuseUITests */,
 				430708A81C82B5CD0099AD80 /* Products */,
-				430708DE1C82D5BA0099AD80 /* Cartfile */,
-				430708DF1C82D5BA0099AD80 /* Cartfile.resolved */,
-				430708E01C82D5BA0099AD80 /* README.md */,
-				430708D81C82CEDE0099AD80 /* Carthage */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,8 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				430708AA1C82B5CD0099AD80 /* AppDelegate.swift */,
-				430708AC1C82B5CD0099AD80 /* Controllers.swift */,
-				430708D01C82BD320099AD80 /* Renderers.swift */,
+				430708AC1C82B5CD0099AD80 /* ViewController.swift */,
 				430708AE1C82B5CD0099AD80 /* Main.storyboard */,
 				430708B11C82B5CD0099AD80 /* Assets.xcassets */,
 				430708B31C82B5CD0099AD80 /* LaunchScreen.storyboard */,
@@ -212,12 +185,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				430708E11C82D5BA0099AD80 /* Cartfile in Resources */,
-				430708E21C82D5BA0099AD80 /* Cartfile.resolved in Resources */,
 				430708B51C82B5CD0099AD80 /* LaunchScreen.storyboard in Resources */,
 				430708B21C82B5CD0099AD80 /* Assets.xcassets in Resources */,
 				430708B01C82B5CD0099AD80 /* Main.storyboard in Resources */,
-				430708D91C82CEDE0099AD80 /* Carthage in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,10 +205,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				430708AD1C82B5CD0099AD80 /* Controllers.swift in Sources */,
+				430708AD1C82B5CD0099AD80 /* ViewController.swift in Sources */,
 				430708AB1C82B5CD0099AD80 /* AppDelegate.swift in Sources */,
-				430708E31C82D5BA0099AD80 /* README.md in Sources */,
-				430708D11C82BD320099AD80 /* Renderers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,7 +335,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = SpectralMuse/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -376,7 +343,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.spectra.SpectralMuse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = SpectralMuseOSXBridgingHeader.h;
 			};
 			name = Debug;
 		};
@@ -384,7 +350,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = SpectralMuse/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -393,7 +358,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.spectra.SpectralMuse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = SpectralMuseOSXBridgingHeader.h;
 			};
 			name = Release;
 		};
@@ -440,7 +404,6 @@
 				430708C61C82B5CD0099AD80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 		430708C71C82B5CD0099AD80 /* Build configuration list for PBXNativeTarget "SpectralMuseUITests" */ = {
 			isa = XCConfigurationList;
@@ -449,7 +412,6 @@
 				430708C91C82B5CD0099AD80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
